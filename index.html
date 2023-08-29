@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cats</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+
+    <div class="navBar">
+        <button class="btn">click to load!</button>
+
+        <h2>Cat Stuff</h2>
+        
+        <div class="subNavBar">
+            <select name="limit" id="catPics">
+                <option value="12">How Many Cats?</option>
+                <option value="10">10</option>
+                <option value="20">20</option>
+                <option value="40">40</option>
+                <option value="50">50</option>
+
+            </select>
+            <button class="btn2"> submit</button>
+        </div>
+    </div>
+
+    <h3>Random Cat Fact!</h3>
+    <p class="subP">Amount of Cat Stuff about to load : 12 (default)</p>
+    
+    <div id="bigbox">
+        <div class="smallbox">
+            <p class="bigboxP">images of Cats will be loaded as such:</p>
+            <p class="bigboxP">Press on "Click to load" button to summon many more images as this one</p>
+            <p class="bigboxP">On the top right corner there is a "select bar", select a value and submit it to get</p>
+            <p class="bigboxP">the given amount of Cat Stuff &#128008; to be loaded.</p>
+            <p class="bigboxP">TheCatAPI was used to fetch these images.</p>
+            <p class="bigboxP">~ Eish Chandeal</p>
+        </div>
+        <div class="smallbox">
+            <img src="https://cdn2.thecatapi.com/images/6d0.jpg" alt="CatPic">
+            <a href="https://cdn2.thecatapi.com/images/6d0.jpg">Source</a>
+        </div>
+    </div>
+
+    <script src="app2.js"></script>
+</body>
+</html>
+
+<!-- Idea: make the button appear like an Icon *cat emoji* when clicked
+the emoji will change. and unclicked it will change back. using "toggle"
+feature. -->

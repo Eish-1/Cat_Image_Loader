@@ -1,0 +1,155 @@
+body{
+    background-color: black;
+    text-align: center;
+}
+.subP{
+    color: antiquewhite;
+    font-weight: 100;
+}
+.bigboxP{
+    color: antiquewhite;
+    font-weight: 100;
+}
+/* h2{
+    transition: 0.5s ease-in-out;
+}
+h2:hover{
+    transform: scale(1.25);
+} */
+
+
+/* stuff considering HTML Elements begins down there: */
+.navBar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    width: 95%;
+    height: 3rem;
+    border: #343434 2px solid;
+    border-radius: 10px;
+
+    margin: auto ;
+
+    background-color: #343434;
+}
+    .navBar h2{
+        position: relative;
+        left: 3rem;  /* Depends on the length of written info*/
+
+        color: aliceblue;
+    }
+
+button{
+    border-radius: 5px;
+    height: 2rem;
+
+    background-color: #343434;
+    color: antiquewhite;
+
+    transition: 0.5s ease-in-out ;
+}
+    button:hover{
+        background-color: #000;
+    }
+    button:active{
+        transition: 0s;
+        background-color: azure;
+        color: #121212;
+    }
+
+h3{
+    font-weight: 500;
+    font-style: italic;
+    color: antiquewhite;
+    transition: 0.75s ease-in-out;
+}
+    h3:hover{
+        color: goldenrod;
+    }
+
+#bigbox{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    overflow: auto;
+
+    width: 99%;
+    height: 100vh;
+    border: black 2px solid;
+    margin: auto;
+
+    /* z-index: 2; */
+
+    /* position: relative;
+    top: 100px; */
+}
+.smallbox{
+    background-color: black;
+
+    height: 22rem;
+    width: 22rem;
+    border: black 2px solid;
+    border-radius: 15px;
+
+    margin: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+
+    object-fit: cover;
+    overflow: hidden;
+
+    transition: 0.5s ease-in-out;
+    
+}
+    .smallbox img{
+        object-fit:contain;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        height: 21rem;
+    }
+    .smallbox:hover{
+        transform: scale(1.05);
+    }
+    
+    div::-webkit-scrollbar{
+        width: 10px;
+    }
+    div::-webkit-scrollbar-track{
+        border-radius: 15px;
+        background-color: black;
+    }
+    div::-webkit-scrollbar-track:hover{
+        background-color: #232323;
+    }
+    div::-webkit-scrollbar-thumb{
+        background-color: #343434;
+    }
+    div::-webkit-scrollbar-thumb:hover{
+        background-color: grey;
+    }
+
+a{
+    text-decoration: none;
+    color: white;
+
+    transition: 0.75s ease-in-out;
+}
+    .smallbox:hover a{
+        color: orange;
+    }
+a:hover{
+    text-decoration: underline orange solid;
+}
+
+@media(max-width:760px){
+    h2{
+        display: none;
+    }
+}
