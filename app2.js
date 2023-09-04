@@ -22,6 +22,9 @@ let btn2 = document.querySelector(".btn2");
 let selectBox = document.querySelector("select");
 let subP = document.querySelector(".subP");
 
+// update
+let btn3 = document.querySelector(".btn3");  //
+
 // Fixed: https://www.w3docs.com/snippets/javascript/how-to-get-the-value-of-selected-option-in-a-select-box.html#:~:text=You%20can%20either%20select%20text,value%20of%20selected%20attribute%20value.&text=let%20selectedValue%20%3D%20%24(%22%23selectVal,val()%3B
 function showSelect(){
     let selectedValue = selectBox.value;
@@ -86,3 +89,16 @@ async function showCatApi(url2){
         console.log(ele.url);
     }
 }
+
+// update
+btn3.addEventListener("click",async()=>{
+    bigbox.innerHTML = '';
+
+    console.log("button was clicked.");
+
+    let catData = await catFacts(url);
+    h3.innerText = catData;
+
+    await showCatApi(url2);
+    
+})
